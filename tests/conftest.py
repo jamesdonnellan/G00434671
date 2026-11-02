@@ -8,6 +8,8 @@ from app.database import get_db
 from app.main import app
 from app.models import Base
 
+client = TestClient(app)
+
 TEST_DATABASE_URL = "sqlite+pysqlite://"
 
 test_engine = create_engine(
